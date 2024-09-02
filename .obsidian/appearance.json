@@ -1,8 +1,4 @@
 {
-  "baseFontSize": 18,
-  "enabledCssSnippets": [
-    "font_type"
-  ],
-  "accentColor": "",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "baseFontSize": 20
 }

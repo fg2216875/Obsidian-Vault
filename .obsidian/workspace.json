@@ -1,52 +1,37 @@
 {
   "main": {
-    "id": "0ebd8a42a711c1bb",
+    "id": "0b2067349e3b586a",
     "type": "split",
     "children": [
       {
-        "id": "9dc181244a3b56b7",
+        "id": "d1cf72b0d902049b",
         "type": "tabs",
         "children": [
           {
-            "id": "f872ddb8d79998e2",
+            "id": "a17492122cfdc4c4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "前端相關/Javascript筆記.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55229290fbf93a2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "使用套件相關問題/安裝套件後，更新到另一台主機上.md",
-                "mode": "source",
-                "source": false
+                "file": "資料庫筆記/圖片/NoSqlDocument.png"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "ab8dd3acad99bc71",
+    "id": "ee65042419019588",
     "type": "split",
     "children": [
       {
-        "id": "8bafb3f8101d409d",
+        "id": "b01b2f2a8c0b6b2c",
         "type": "tabs",
         "children": [
           {
-            "id": "a665c7aa7a0a778b",
+            "id": "c0c06b902c667d3c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,7 +41,7 @@
             }
           },
           {
-            "id": "b9116394c41ff428",
+            "id": "f5520505cd6fdb23",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -71,7 +56,7 @@
             }
           },
           {
-            "id": "5d2f28ba61c4351e",
+            "id": "6a6ce2fda9dd9aca",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -85,20 +70,20 @@
     "width": 300
   },
   "right": {
-    "id": "8cc139fb3e0d03e5",
+    "id": "077e266aa0ee92f6",
     "type": "split",
     "children": [
       {
-        "id": "5fd454992f1349ab",
+        "id": "ff2ff4a74f0956de",
         "type": "tabs",
         "children": [
           {
-            "id": "b35df56e2eb048f3",
+            "id": "4933238b15c394ca",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "使用套件相關問題/安裝套件後，更新到另一台主機上.md",
+                "file": "資料庫筆記/圖片/NoSqlDocument.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +91,39 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8a7ab6876960cabc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "資料庫筆記/圖片/NoSqlDocument.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fb4b6d632d8c7852",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "be0b5c80aacf774d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "資料庫筆記/圖片/NoSqlDocument.png"
               }
             }
           }
@@ -121,55 +139,57 @@
       "switcher:開啟快速切換": false,
       "graph:查看關聯圖": false,
       "canvas:建立新畫布": false,
-      "command-palette:開啟命令面板": false,
-      "markdown-importer:開啟 Markdown 格式轉換器": false
+      "daily-notes:開啟今天的每日筆記": false,
+      "templates:插入模板": false,
+      "command-palette:開啟命令面板": false
     }
   },
-  "active": "55229290fbf93a2d",
+  "active": "c0c06b902c667d3c",
   "lastOpenFiles": [
-    "C charp筆記/基本認識.md",
-    "C charp筆記/資料匯出到Excel.md",
-    "C charp筆記/資料儲存位置比較.md",
-    "C charp筆記/Email寄送.md",
-    "前端相關/Vue問題紀錄.md",
-    "前端相關/Vue3 Cli 基本.md",
-    "前端相關/Vue.js.md",
-    "前端相關/Javascript筆記.md",
+    "Postman/圖片/Pasted image 20240902200556.png",
+    "Postman/將含有雙引號的資料，存放到json中.md",
+    "Postman/撰寫迴圈呼叫API.md",
+    "資料庫筆記/Oracle語法.md",
+    "資料庫筆記/SQL功能操作.md",
+    "資料庫筆記/SQL語法.md",
+    "資料庫筆記/SQL & NoSQL.md",
+    "Docker/Docker 安裝.md",
+    "Docker/Docker 指令.md",
+    "Docker/用.Net5專案 建立Image映像檔.md",
+    "Docker/將Image上傳至docker hub中.md",
+    "git筆記/git指令.md",
+    "git筆記/git安裝步驟.md",
+    "git筆記/git 問題紀錄.md",
     "Net Core筆記/建立API步驟.md",
+    "Net Core筆記/在IIS上測試Debug.md",
     "Net Core筆記/架設到IIS步驟.md",
     "Net Core筆記/執行API相關功能.md",
-    "Net Core筆記/Net Core基本.md",
     "Net Core筆記/API錯誤訊息.md",
-    "Net Core筆記/在IIS上測試Debug.md",
-    "C charp筆記/上傳檔案.md",
-    "前端相關/Jquery筆記.md",
-    "C charp筆記/非同步筆記.md",
-    "git筆記/git指令.md",
-    "資料庫筆記/SQL & NoSQL.md",
-    "NoSqlDocument.png",
-    "資料庫筆記/圖片/NoSqlDB.png",
-    "C charp筆記/`IEnumerable` 和 `List` 的區別.md",
-    "C charp筆記/未命名",
+    "Net Core筆記/Net Core基本.md",
+    "Pasted image 20240902200553.png",
+    "Postman/圖片/Pasted image 20240902195922.png",
+    "資料庫筆記/圖片/NoSqlDocument.png",
+    "Pasted image 20240902195416.png",
+    "VS Code/VS Code 安裝.md",
+    "VS Code/dotnet指令.md",
+    "VS Code/問題紀錄.md",
     "Json格式相關/問題整理.md",
-    "Json格式相關",
-    "資料庫筆記/SQL語法.md",
-    "使用套件相關問題/安裝套件後，更新到另一台主機上.md",
-    "Flutter/安裝Flutter，並使用在VS Code中.md",
+    "資料庫筆記/圖片/Pasted image 20220601154442.png",
+    "資料庫筆記/圖片/Pasted image 20220601154430.png",
+    "資料庫筆記/圖片/Pasted image 20220601154402.png",
+    "資料庫筆記/圖片/Pasted image 20220601154423.png",
+    "資料庫筆記/圖片/Pasted image 20220601154409.png",
+    "資料庫筆記/圖片",
+    "資料庫筆記/Oracle功能操作.md",
+    "資料庫筆記",
+    "資安筆記/程式白箱風險.md",
+    "資安筆記/圖片",
+    "資安筆記",
+    "程式bug紀錄",
+    "面試問題",
+    "前端相關",
     "使用套件相關問題",
-    "Postman/功能操作紀錄.md",
-    "程式bug紀錄/sql相關.md",
-    "git筆記/圖片/Pasted image 20240617145502.png",
-    "git筆記/圖片/Pasted image 20240617145412.png",
-    "Flutter",
-    "Postman/圖片/Pasted image 20240530172314.png",
-    "Pasted image 20240530171925.png",
-    "Postman/圖片/Pasted image 20240530171447.png",
-    "Postman/圖片/Pasted image 20240530171824.png",
-    "未命名.png",
-    "Pasted image 20240530171710.png",
-    "Postman/圖片",
-    "Postman",
-    "Docker/圖片",
-    "Docker"
+    "VS Code",
+    "Postman/圖片"
   ]
 }
