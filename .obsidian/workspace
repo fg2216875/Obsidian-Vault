@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "8a22b83f12c59242",
+    "type": "split",
+    "children": [
+      {
+        "id": "893e9dd7f565ebc1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "git筆記/git指令.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2cad9e6fb17b0d6b",
+    "type": "split",
+    "children": [
+      {
+        "id": "eaf54b32eceff46a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a4e7f5713ec2725",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "290690b09dd59c01",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "99cf62f89eae4010",
+    "type": "split",
+    "children": [
+      {
+        "id": "b93da2d56e4ca47c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f3f0c00f0892ab0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "git筆記/git指令.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "893e9dd7f565ebc1",
+  "lastOpenFiles": [
+    "Net Core筆記/建立API步驟.md",
+    "Net Core筆記/呼叫API程式.md",
+    "資料庫筆記/SQL語法.md",
+    "資料庫筆記/SQL功能操作.md",
+    "C charp筆記/非同步筆記.md",
+    "前端相關/Vue.js.md",
+    "前端相關/Jquery筆記.md",
+    "前端相關/Vue3 Cli 基本.md",
+    "程式bug紀錄/sql相關.md",
+    "VS Code/問題紀錄.md"
+  ]
+}
