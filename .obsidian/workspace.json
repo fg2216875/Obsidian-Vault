@@ -11,9 +11,11 @@
             "id": "a17492122cfdc4c4",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "資料庫筆記/圖片/NoSqlDocument.png"
+                "file": "前端相關/Javascript筆記.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "資料庫筆記/圖片/NoSqlDocument.png",
+                "file": "前端相關/Javascript筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,23 +138,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:開啟 Markdown 格式轉換器": false,
       "switcher:開啟快速切換": false,
       "graph:查看關聯圖": false,
       "canvas:建立新畫布": false,
-      "daily-notes:開啟今天的每日筆記": false,
-      "templates:插入模板": false,
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "c0c06b902c667d3c",
+  "active": "a17492122cfdc4c4",
   "lastOpenFiles": [
+    "資料庫筆記/SQL & NoSQL.md",
+    "資料庫筆記/圖片/Pasted image 20240906180422.png",
+    "資料庫筆記/圖片/NoSqlDocument.png",
     "Postman/圖片/Pasted image 20240902200556.png",
     "Postman/將含有雙引號的資料，存放到json中.md",
     "Postman/撰寫迴圈呼叫API.md",
     "資料庫筆記/Oracle語法.md",
     "資料庫筆記/SQL功能操作.md",
     "資料庫筆記/SQL語法.md",
-    "資料庫筆記/SQL & NoSQL.md",
     "Docker/Docker 安裝.md",
     "Docker/Docker 指令.md",
     "Docker/用.Net5專案 建立Image映像檔.md",
@@ -168,7 +171,6 @@
     "Net Core筆記/Net Core基本.md",
     "Pasted image 20240902200553.png",
     "Postman/圖片/Pasted image 20240902195922.png",
-    "資料庫筆記/圖片/NoSqlDocument.png",
     "Pasted image 20240902195416.png",
     "VS Code/VS Code 安裝.md",
     "VS Code/dotnet指令.md",
@@ -178,7 +180,6 @@
     "資料庫筆記/圖片/Pasted image 20220601154430.png",
     "資料庫筆記/圖片/Pasted image 20220601154402.png",
     "資料庫筆記/圖片/Pasted image 20220601154423.png",
-    "資料庫筆記/圖片/Pasted image 20220601154409.png",
     "資料庫筆記/圖片",
     "資料庫筆記/Oracle功能操作.md",
     "資料庫筆記",

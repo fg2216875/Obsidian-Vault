@@ -6,7 +6,6 @@ let member = members.find(x=>x.No == 1);
 checkPerson.push(member);
 ```
 
-
 2.List A新增指定物件，同時將List B刪除剛剛新增的指定物件
 A:
 ```javascript
@@ -19,4 +18,17 @@ var index = this.editAudits.indexOf(audit);
 if (index > -1) { 
 	this.editAudits.splice(index, 1); 
 }
+```
+
+3.將輸入的字串日期增加一天
+```javascript
+// 假設你的日期字串是 '2023-08-15'
+let dateStr = '2023-08-15';
+// 創建一個 Date 物件
+let date = new Date(dateStr);
+// 使用 setDate 方法將日期加1天
+date.setDate(date.getDate() + 1);
+// 將日期轉換回字串格式
+let newDateStr = date.toISOString().split('T')[0];
+console.log(newDateStr); // 輸出 '2023-08-16'
 ```

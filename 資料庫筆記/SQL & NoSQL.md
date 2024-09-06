@@ -21,6 +21,7 @@ NoSQL 的意思是 “Not Only SQL”，也就是不限定為「關聯式資料�
 文件資料庫是NoSQL資料庫的一種，顧名思義，是把資料存放成「文件 (documents)」，這些文件會組成為「集合 (collection)」並放在一起![[NoSqlDB.png]]
 在文件資料庫裡，文件會存成 JSON 格式，而資料物件會由「屬性-值」 (attribute-vaule pair) 或陣列組成。
 ![[NoSqlDocument.png]]
+![[Pasted image 20240906180422.png]]
 
 ============================================
 ## 使用時機:##
