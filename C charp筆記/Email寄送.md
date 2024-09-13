@@ -6,11 +6,9 @@ public bool SendEmail(){
 	var toAddress = new MailAddress("recipient-email@example.com", "Recipient Name"); 
 	const string fromPassword = "your-email-password"; 
 	const string subject = "This is a test email"; 
-	const string body = "Hello,\n\nThis is a test email sent using System.Net.Mail.\n\nBest regards,\nYour Name"; 
+	const string body = "Hello,\n\nThis is a test email"; 
 	// 設定 SMTP 伺服器 
-	var smtp = new SmtpClient { Host = "smtp.example.com", Port = 587, EnableSsl = true, 
-	DeliveryMethod = SmtpDeliveryMethod.Network, UseDefaultCredentials = false, 
-	Credentials = new NetworkCredential(fromAddress.Address, fromPassword) }; 
+	var smtp = new SmtpClient { Host = "smtp.example.com", Port = 587, EnableSsl = true, DeliveryMethod = SmtpDeliveryMethod.Network, UseDefaultCredentials = false, Credentials = new NetworkCredential(fromAddress.Address, fromPassword) }; 
 	using (var message = new MailMessage(fromAddress, toAddress) { 
 		Subject = subject, Body = body }) { 
 		try { 
@@ -18,7 +16,7 @@ public bool SendEmail(){
 			return true;
 		} 
 		catch (Exception ex) { 
-			Console.WriteLine("Exception caught in CreateTestMessage2(): {0}", ex.ToString()); 
+			Console.WriteLine("Exception caught in CreateTestMessage2", ex.ToString()); 
 			return false;
 		} 
 	}
