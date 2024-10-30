@@ -1,11 +1,11 @@
 **將members陣列中指定的member物件取出後，並push到checkPerson陣列中**
-註:此時若將checkPerson內的member資料做修改時，會連同影響到members有對應的原生資料
 ```javascript
 let checkPerson = [];
 let members = [{NO:1,Name:"Kity"},{NO:2,Name:"Kai"},{NO:1,Name:"Ko"}];
 let member = members.find(x=>x.No == 1);
 checkPerson.push(member);
 ```
+註:此時若將checkPerson內的member資料做修改時，會連同影響到members中的原始資料
 
 -------
 **在List A新增指定物件，同時將List B刪除剛剛新增的指定物件**
@@ -53,3 +53,14 @@ const names = data.map(({ name }) => name);
 - 並不會改變原陣列
 - 回傳數量會等於原始陣列的長度
 - 如果不回傳則是 `undefined`
+
+----
+**扣除數字但結果不小於0**
+```javascript
+function deductExamCount(examInfo) {
+let result = Math.max(0, examInfo.examCount - examInfo.validExam); 
+return result;
+}
+```
+
+-----
