@@ -1,8 +1,6 @@
-Oracle語法
 
-=======================================================================
+### 取得select查詢中的第一筆資料
 
-## 取得select查詢中的第一筆資料
 ```sql
 select fname from MyTbl where rownum = 1
 
@@ -10,17 +8,19 @@ select fname from MyTbl where rownum = 1
 
 select max(fname) over (rank() order by some_factor) from T_TABLE
 ```
-=======================================================================
 
-## 將varchar轉成date
+---
+### 將varchar轉成date
+
 ```sql
 update T_Pwd_change_log
 
 set C_Date = to_date('2021-04-10','yyyy/MM/dd')  --to_date('2021-04-10','yyyy/MM/dd')
 ```
-=======================================================================
 
-## 將group by後的欄位值null改顯示為0
+----
+### 將group by後的欄位值null改顯示為0
+
 ```sql
 NVL(b.num, 0) -- 如果num欄位為null的話，則顯示0
 
@@ -28,21 +28,20 @@ SELECT a.id, NVL(b.num, 0) AS num FROM a
 
 LEFT JOIN (SELECT id, COUNT(*) AS num FROM b GROUP BY id) b on b.id=a.id
 ```
-=======================================================================
 
-## coalesce 函式可為多個參數，回傳第一個不是NULL值的參數
+----
+### coalesce 函式可為多個參數，回傳第一個不是NULL值的參數
+
 ```sql
 select * from T_RECRUIT a
 
 WHERE coalesce(REAL_RECRUIT_DATE,RECRUIT_DATE) IS NOT NULL AND coalesce(REAL_QUIT_DATE,QUIT_DATE) IS NULL
 ```
-如果REAL_RECRUIT_DATE不為null的話，則會回傳此參數。如果REAL_RECRUIT_DATE為null的話，則會查看下個參數，
+如果REAL_RECRUIT_DATE不為null的話，則會回傳此參數。如果REAL_RECRUIT_DATE為null的話，則會查看下個參數，以此類推
 
-以此類推
+----
+### EXTRACT 函式能夠抽取日期時間(datetime)格式資料中的指定資訊，例如年，月，日等。
 
-=======================================================================
-
-## EXTRACT 函式能夠抽取日期時間(datetime)格式資料中的指定資訊，例如年，月，日等。
 ```sql
 SELECT
 
@@ -56,46 +55,37 @@ SELECT
 
 FROM DUAL;
 ```
-=======================================================================
 
-## 另外的寫法 T_CAREERAPPLY.CA_ID，假設Table命名為'a'的話，則可寫成 a.CA_ID
+----
+### 另外的寫法 T_CAREERAPPLY.CA_ID，假設Table命名為'a'的話，則可寫成 a.CA_ID
+
 ```sql
 select * from T_CAREERAPPLY
-
 where TEACHERS = (
-
-select LISTAGG(t.CAT_TT_NO,',') WITHIN GROUP (ORDER BY t.CAT_NO)
-
-from T_CAREERAPPLY_TEACHER t
-
-where t.CAT_CA_ID = T_CAREERAPPLY.CA_ID and t.STATUS = 1
-
-  )
-
-||
-
-select * from T_CAREERAPPLY a
-
-where TEACHERS = (
-
-select LISTAGG(t.CAT_TT_NO,',') WITHIN GROUP (ORDER BY t.CAT_NO)
-
-from T_CAREERAPPLY_TEACHER t
-
-where t.CAT_CA_ID = a.CA_ID and t.STATUS = 1
-
-  )
+	select LISTAGG(t.CAT_TT_NO,',') WITHIN GROUP (ORDER BY t.CAT_NO)
+	from T_CAREERAPPLY_TEACHER t
+	where t.CAT_CA_ID = T_CAREERAPPLY.CA_ID and t.STATUS = 1
+)  
 ```
-=====================================================================
+寫法等同於下方
+```sql
+select * from T_CAREERAPPLY a
+where TEACHERS = (
+	select LISTAGG(t.CAT_TT_NO,',') WITHIN GROUP (ORDER BY t.CAT_NO)
+	from T_CAREERAPPLY_TEACHER t
+	where t.CAT_CA_ID = a.CA_ID and t.STATUS = 1
+)
+```
 
-## 將日期字串轉換成Date型態
+---
+### 將日期字串轉換成Date型態
 
 由於Oracle必須使用函式將字串轉換成Date，才可以存入資料型態為"Date"的欄位
 ```sql
 C_Date = to_date('2021-04-10','yyyy/MM/dd')
 ```
-====================================================
 
+---
 ## Oracle EXISTS條件的使用方法
 
 ## EXISTS(subquery)
