@@ -64,3 +64,15 @@ return result;
 ```
 
 -----
+**監聽瀏覽器離開畫面的事件**
+```javascript
+//上一頁、重新整理、關閉皆會觸發beforeunload事件(也可使用pagehide)
+window.addEventListener('beforeunload', function (event) { 
+	// 在此執行你想要的操作，例如保存資料或彈出警告 
+	console.log('頁面即將關閉'); 
+	// 若需要顯示提示訊息： 
+	event.preventDefault(); 
+	event.returnValue = ''; // 部分瀏覽器需要這行來顯示確認對話框 
+});
+```
+註: 瀏覽器對顯示 `beforeunload` 對話框的行為有限制，可能不支援自訂訊息。
