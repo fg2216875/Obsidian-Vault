@@ -1,5 +1,4 @@
-### 無法clone專案:
-
+## 無法clone專案:
 可能是因為某些因素所造成，步驟如下
 1.當第一次clone專案時，當電腦沒有相對應的憑證時，通常會跳出輸入git帳密的視窗，輸入完後就會記錄在電腦中。假如git雲端有更換網域的話，但在clone專案時沒出現輸入視窗時，可能是使用到前人遺留下來的憑證，會造成沒有權限操作雲端資料庫，需要將舊憑證刪除後，待有跳出輸入帳密視窗即為成功
 
@@ -9,7 +8,7 @@
 ![[Pasted image 20240617145502.png]]
 
 ----------------------------------
-### 使用git push時，出現"Everything up-to-date" 的訊息:
+## 使用git push時，出現"Everything up-to-date" 的訊息:
 
 通常代表本地分支已經與遠端分支同步，沒有需要更新或提交的變更。
 **1.確認本地有無未提交的變更:**
@@ -36,3 +35,34 @@ git checkout your-branch-name
 ```
 git fetch
 ```
+
+---
+## 推送分支可能出現的問題
+
+fatal: The current branch master has no upstream branch. To push the current branch and set the remote as upstream, use 
+`git push --set-upstream origin master`
+
+意思是當嘗試推送分支時，Git 通知該分支尚未設定上游（upstream）分支。需要告訴 Git，當前的本地分支（如 `master`）應該對應到遠端的哪個分支。**可使用上述訊息中的指令設定上游分支**
+
+備註:
+- `--set-upstream`: 設定本地分支與遠端分支的對應關係（上游分支）。
+- `origin`: 預設遠端儲存庫的名稱。
+- `master`: 指定的遠端分支名稱。
+
+
+! [rejected] master -> master (fetch first) error: failed to push some refs to 'http://XXX.XXX.1.1/App/ABC.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing hint: to the same ref. You may want to first integrate the remote changes 
+hint: (e.g., 'git pull ...') before pushing again.
+
+這個錯誤的意思是：遠端儲存庫的 `master` 分支已經有變更，而你的本地分支缺少這些變更。Git 為了保護遠端儲存庫，阻止了這次的推送。
+
+### 1.拉取遠端分支的變更
+執行以下指令，將遠端的 `master` 分支拉取到本地：
+`git pull origin master --rebase`
+
+#### **`--rebase` 的作用**：
+1. 會把本地的變更暫時移開，先應用遠端的變更，然後再將本地的提交依序應用回來。
+2. 確保提交歷史保持乾淨。
+
+### 2.強制覆蓋遠端變更

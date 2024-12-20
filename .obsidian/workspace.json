@@ -25,18 +25,30 @@
             "id": "d762b1a95c401b14",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Linux/圖片/Pasted image 20241205141330.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241205141330"
+            }
+          },
+          {
+            "id": "69abd5c2415e1daf",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "前端相關/Javascript筆記.md",
+                "file": "C charp筆記/資料匯出到Excel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Javascript筆記"
+              "title": "資料匯出到Excel"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -176,53 +188,53 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "d762b1a95c401b14",
+  "active": "69abd5c2415e1daf",
   "lastOpenFiles": [
-    "資料庫筆記/MSSQL/分析索引、執行計畫.md",
-    "前端相關/Javascript筆記.md",
+    "C charp筆記/try catch捕捉錯誤.md",
+    "C charp筆記/資料儲存位置比較.md",
+    "C charp筆記/資料匯出到Excel.md",
+    "C charp筆記/Email寄送.md",
     "C charp筆記/基本認識.md",
     "C charp筆記/非同步筆記.md",
-    "C charp筆記/上傳Excel並匯入到SQL.md",
-    "前端相關/Bootstrap 筆記.md",
-    "前端相關/Jquery筆記.md",
-    "資料庫筆記/MSSQL/SQL語法.md",
-    "資料庫筆記/MSSQL/SQL指令(管理層級).md",
-    "資料庫筆記/MSSQL/SQL功能操作.md",
-    "git筆記/git操作方式記錄.md",
-    "git筆記/git安裝步驟.md",
-    "git筆記/git指令.md",
-    "資料庫筆記/圖片/Pasted image 20241126180235.png",
-    "資料庫筆記/Oracle/Oracle語法.md",
-    "資料庫筆記/Oracle/Oracle功能操作.md",
-    "資料庫筆記/Oracle",
-    "資料庫筆記/Connection Pool 與連線相關問題.md",
-    "資料庫筆記/MSSQL",
-    "資料庫筆記/效能比較.md",
-    "Net Core筆記/Net Core基本.md",
-    "C charp筆記/try catch捕捉錯誤.md",
     "C charp筆記/上傳、下載檔案.md",
-    "C charp筆記/上傳檔案.md",
-    "C charp筆記/Email寄送.md",
-    "C charp筆記/資料儲存位置比較.md",
-    "Json格式相關/問題整理.md",
-    "Json格式相關/轉換Json格式備註.md",
+    "C charp筆記/上傳Excel並匯入到SQL.md",
+    "前端相關/Javascript筆記.md",
+    "Docker/Docker 指令.md",
+    "資料庫筆記/SQL問題紀錄.md",
+    "git筆記/git指令.md",
+    "前端相關/Jquery筆記.md",
+    "前端相關/Cookie使用.md",
+    "前端相關/Bootstrap 筆記.md",
+    "資料庫筆記/MSSQL/SQL語法.md",
+    "資料庫筆記/MSSQL/SQL功能操作.md",
+    "資料庫筆記/MSSQL/效能比較.md",
+    "前端相關/Vue.js/Component使用.md",
+    "前端相關/Vue.js/Vue3 Cli 基本.md",
+    "前端相關/Vue.js/Vue功能紀錄.md",
+    "資料庫筆記/MSSQL/分析索引、執行計畫.md",
+    "資料庫筆記/MSSQL/比對sql修改前後的查詢結果是否一致.md",
+    "資料庫筆記/MSSQL/SQL指令(管理層級).md",
+    "資料庫筆記/Connection Pool 與連線相關問題.md",
+    "資料庫筆記/SQL & NoSQL.md",
+    "Linux/圖片/Pasted image 20241205141942.png",
+    "Linux/圖片/Pasted image 20241205141330.png",
+    "Linux/圖片/Pasted image 20241205135941.png",
+    "Linux/圖片/Pasted image 20241205113607.png",
+    "Linux/圖片/Pasted image 20241205114541.png",
+    "Linux/圖片/Pasted image 20241205114500.png",
+    "Linux/圖片/Pasted image 20241205114337.png",
+    "Linux/圖片/Pasted image 20241205113733.png",
+    "Linux/圖片",
+    "Linux/Xshell",
+    "Linux",
+    "資料庫筆記/圖片/Pasted image 20241126180235.png",
+    "資料庫筆記/Oracle",
+    "資料庫筆記/MSSQL",
     "Docker/圖片/Pasted image 20240301154922.png",
-    "Docker/圖片/Pasted image 20240301165956.png",
-    "Docker/圖片/Pasted image 20240227165909.png",
-    "Docker/圖片/Pasted image 20240227154953.png",
-    "Docker/圖片/Pasted image 20240227154002.png",
-    "Docker/圖片/Pasted image 20240223172848.png",
-    "Docker/圖片/Pasted image 20240223172550.png",
-    "Docker/將Image上傳至docker hub中.md",
-    "Postman/圖片/Pasted image 20240902200556.png",
-    "Postman/圖片/Pasted image 20240530172314.png",
     "C charp筆記/數值轉換",
     "前端相關/Vue.js/未命名",
     "前端相關/Vue.js",
     "Python/圖片",
-    "Python",
-    "資料庫筆記/圖片",
-    "資料庫筆記",
-    "資安筆記/圖片"
+    "Python"
   ]
 }

@@ -1,4 +1,4 @@
-**將members陣列中指定的member物件取出後，並push到checkPerson陣列中**
+### 將members陣列中指定的member物件取出後，並push到checkPerson陣列中
 ```javascript
 let checkPerson = [];
 let members = [{NO:1,Name:"Kity"},{NO:2,Name:"Kai"},{NO:1,Name:"Ko"}];
@@ -8,7 +8,7 @@ checkPerson.push(member);
 註:此時若將checkPerson內的member資料做修改時，會連同影響到members中的原始資料
 
 -------
-**在List A新增指定物件，同時將List B刪除剛剛新增的指定物件**
+### 在List A新增指定物件，同時將List B刪除剛剛新增的指定物件
 ```javascript
 let editAudits = [{XXX,XXX},{CCC,CCC}];
 var audit = this.editAudits.filter(x => x.gOrder == this.selectedAudit)[0]; 
@@ -22,7 +22,7 @@ if (index > -1) {
 ```
 
 --------
-**將輸入的字串日期增加一天**
+### 將輸入的字串日期增加一天
 ```javascript
 // 假設你的日期字串是 '2023-08-15'
 let dateStr = '2023-08-15';
@@ -36,7 +36,7 @@ console.log(newDateStr); // 輸出 '2023-08-16'
 ```
 
 ----------
-**在物件陣列中只取出特定屬性**
+### 在物件陣列中只取出特定屬性
 ```javascript
 const data = [ 
 { id: 1, name: 'Alice', age: 25, gender: 'Female', country: 'USA' }, 

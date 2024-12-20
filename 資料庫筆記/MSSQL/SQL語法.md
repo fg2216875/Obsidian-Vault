@@ -1,4 +1,3 @@
-
 ## 基本CRUD:
 ```sql
 新增資料:
@@ -267,3 +266,24 @@ JOIN (
 	FROM tableA 
 	WHERE Active = 1 ) A ON W.EmployeeID = A.EmployeeID
 ```
+
+----
+## 顯示查詢執行的時間
+
+```sql
+SET STATISTICS TIME ON; 
+	-- 在這裡執行你的 SQL 指令 
+	SELECT * FROM YourTable; 
+SET STATISTICS TIME OFF;
+```
+
+CPU 時間（CPU Time）: 指 SQL Server 使用 CPU 的總時間
+經過時間（Elapsed Time）: 指查詢從開始執行到結束所花費的總時間
+
+註記:
+- **`CPU time` 高但 `Elapsed time` 低**
+    - 表示 SQL Server 使用了多核並行處理，性能表現良好。
+- **`Elapsed time` 高但 `CPU time` 低**
+    - 查詢受到 I/O 操作或資源鎖定的瓶頸影響，需要優化磁碟讀取或避免死鎖。
+- **`CPU time` 與 `Elapsed time` 接近**
+    - 查詢大多數時間都花在計算上，受限於 CPU 性能。
