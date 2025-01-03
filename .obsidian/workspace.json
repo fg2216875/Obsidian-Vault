@@ -13,24 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C charp筆記/上傳、下載檔案.md",
+                "file": "C charp筆記/常用程式碼工具/檢查檔案真實類型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "上傳、下載檔案"
-            }
-          },
-          {
-            "id": "d762b1a95c401b14",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Linux/圖片/Pasted image 20241205141330.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241205141330"
+              "title": "檢查檔案真實類型"
             }
           },
           {
@@ -39,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C charp筆記/資料匯出到Excel.md",
+                "file": "git筆記/git指令.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "資料匯出到Excel"
+              "title": "git指令"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,36 +175,37 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "69abd5c2415e1daf",
+  "active": "a17492122cfdc4c4",
   "lastOpenFiles": [
-    "C charp筆記/try catch捕捉錯誤.md",
-    "C charp筆記/資料儲存位置比較.md",
-    "C charp筆記/資料匯出到Excel.md",
-    "C charp筆記/Email寄送.md",
-    "C charp筆記/基本認識.md",
+    "C charp筆記/常用程式碼工具/數字轉換字串補位.md",
+    "C charp筆記/常用程式碼工具/時間字串轉換成數字.md",
     "C charp筆記/非同步筆記.md",
+    "C charp筆記/資料匯出到Excel.md",
+    "C charp筆記/常用程式碼工具/檢查檔案真實類型.md",
     "C charp筆記/上傳、下載檔案.md",
-    "C charp筆記/上傳Excel並匯入到SQL.md",
-    "前端相關/Javascript筆記.md",
-    "Docker/Docker 指令.md",
-    "資料庫筆記/SQL問題紀錄.md",
-    "git筆記/git指令.md",
-    "前端相關/Jquery筆記.md",
-    "前端相關/Cookie使用.md",
-    "前端相關/Bootstrap 筆記.md",
-    "資料庫筆記/MSSQL/SQL語法.md",
-    "資料庫筆記/MSSQL/SQL功能操作.md",
-    "資料庫筆記/MSSQL/效能比較.md",
-    "前端相關/Vue.js/Component使用.md",
-    "前端相關/Vue.js/Vue3 Cli 基本.md",
-    "前端相關/Vue.js/Vue功能紀錄.md",
-    "資料庫筆記/MSSQL/分析索引、執行計畫.md",
-    "資料庫筆記/MSSQL/比對sql修改前後的查詢結果是否一致.md",
-    "資料庫筆記/MSSQL/SQL指令(管理層級).md",
     "資料庫筆記/Connection Pool 與連線相關問題.md",
-    "資料庫筆記/SQL & NoSQL.md",
-    "Linux/圖片/Pasted image 20241205141942.png",
+    "C charp筆記/基本認識.md",
+    "C charp筆記/資料儲存位置比較.md",
+    "C charp筆記/上傳Excel並匯入到SQL.md",
+    "C charp筆記/類別屬性寫法.md",
+    "C charp筆記/`IEnumerable` 和 `List` 的區別.md",
+    "C charp筆記/Net Core筆記/API錯誤訊息.md",
+    "C charp筆記/Net Core筆記/建立API步驟.md",
+    "C charp筆記/Net Core筆記/架設到IIS步驟.md",
+    "C charp筆記/Net Core筆記/執行API相關功能.md",
+    "C charp筆記/try catch捕捉錯誤.md",
+    "C charp筆記/Email寄送.md",
+    "C charp筆記/Net Core筆記/Net Core基本.md",
+    "C charp筆記/圖片/Pasted image 20220601152434.png",
     "Linux/圖片/Pasted image 20241205141330.png",
+    "git筆記/git指令.md",
+    "git筆記/git 問題紀錄.md",
+    "git筆記/git安裝步驟.md",
+    "git筆記/git操作方式記錄.md",
+    "資料庫筆記/Mongo問題紀錄.md",
+    "資料庫筆記/SQL問題紀錄.md",
+    "前端相關/Javascript筆記.md",
+    "Linux/圖片/Pasted image 20241205141942.png",
     "Linux/圖片/Pasted image 20241205135941.png",
     "Linux/圖片/Pasted image 20241205113607.png",
     "Linux/圖片/Pasted image 20241205114541.png",
@@ -230,8 +218,7 @@
     "資料庫筆記/圖片/Pasted image 20241126180235.png",
     "資料庫筆記/Oracle",
     "資料庫筆記/MSSQL",
-    "Docker/圖片/Pasted image 20240301154922.png",
-    "C charp筆記/數值轉換",
+    "C charp筆記/常用程式碼工具",
     "前端相關/Vue.js/未命名",
     "前端相關/Vue.js",
     "Python/圖片",
