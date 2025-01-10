@@ -1,4 +1,4 @@
-```C#
+```csharp
 try
 {
     DoSomething();

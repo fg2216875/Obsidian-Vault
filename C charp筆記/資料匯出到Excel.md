@@ -1,4 +1,4 @@
-```C#
+```csharp
 public FileResult ExportExamResult(string keyword)
 {
 	try
@@ -13,7 +13,7 @@ public FileResult ExportExamResult(string keyword)
 }
 ```
 
-```C#
+```csharp
 public MemoryStream ExportScoreExcel(string keyword)
 {
 	List<SubjectScoreViewModels> scoreList = new List<SubjectScoreViewModels>();

@@ -1,6 +1,6 @@
 ```html
 <label>
-		<div> <input type="file" @change="handleFileUpload" /> 
+	<div> <input type="file" @change="handleFileUpload" /> 
 		<button @click="uploadFile">上傳 Excel</button> 
 	</div>
 </label>
@@ -45,7 +45,7 @@ export default {
 </script>
 ```
 
-```C#
+```csharp
 using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
 using Dapper;
@@ -114,7 +114,7 @@ public class UploadController : ControllerBase
 
 ```
 
-```C#
+```csharp
 public class YourModel
 {
     public string Column1 { get; set; }

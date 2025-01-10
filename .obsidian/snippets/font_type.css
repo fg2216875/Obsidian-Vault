@@ -3,3 +3,9 @@
     color: red;
 }
 
+/* Markdown 預覽模式下的程式碼區塊 */
+.markdown-preview-view code, .markdown-preview-view pre {
+	white-space: pre !important; /* 保持原始的換行格式 */
+    overflow-x: scroll !important; /* 啟用橫向滾動條 */
+}
+

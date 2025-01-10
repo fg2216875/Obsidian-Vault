@@ -1,4 +1,4 @@
-```C#
+```csharp
 //.net framework
 public bool SendEmail(){
 	// 設定寄件人、收件人、主旨和內容 
