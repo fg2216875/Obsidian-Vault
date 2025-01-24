@@ -61,13 +61,9 @@ ALTER  TABLE  T_ProjectResource  DROP  COLUMN  AssignKey
 運用逗號分隔資料，但要加入大量資料時則會變得不好使用
 ```sql
 INSERT INTO table_name
-
 VALUES (value1_1, value2_2, value3_3,···),
-
 (value2_1, value2_2, value2_3,···),
-
 (value3_1, value3_2, value3_3,···),
-
 ······;
 ```
 ## 或利用子查詢，從其它的資料表中取得資料來作一次多筆新增：
@@ -75,11 +71,8 @@ VALUES (value1_1, value2_2, value3_3,···),
 註:Insert子查詢不需要加values關鍵字
 ```sql
 INSERT INTO table_name (column1, column2, column3,...)
-
 SELECT othercolumn1, othercolumn2, othercolumn3,...
-
 FROM othertable_name
-
 where othercolumn1 = XXX;
 ```
 ## Insert子查詢+混和變數寫法:
@@ -87,13 +80,10 @@ where othercolumn1 = XXX;
 註:如果要把變數Insert至特定欄位上，在select部分加上宣告的變數，並對應到該位置即可
 ```sql
 declare @CreateDate date set @CreateDate = '2021/11/23';
-
 declare @CreateUser int set @CreateUser = 172;
 
 Insert into T_ProjectResourceHistory (PR_ID,RID,Price,WorkDay,Note,Subtotal,PC_ID,CreateDate,CreateUser)
-
 select *,@CreateDate,@CreateUser from T_ProjectResource
-
 where PC_ID = 2
 ```
 
@@ -101,26 +91,15 @@ where PC_ID = 2
 ## 新增資料並回傳主鍵
 ```sql
 Insert into T_ProjectCostHistory
-
 (PC_ID,ProjectID,ContractPrice,ContractPriceNoTax,AcceptancePrice,Expenses,GrossProfit,GrossProfitRate)
-
 OUTPUT INSERTED.PCH_ID   --在OUTPUT後面選擇要回傳的欄位
 
 select PC_ID,ProjectID,ContractPrice,ContractPriceNoTax,AcceptancePrice,Expenses,GrossProfit,GrossProfitRate
-
 from T_ProjectCost where PC_ID = 15
 ```
+
 ```C#
 var PCH_ID = connection.QuerySingle<int>(sql, parameters);  //使用Dapper執行SQL語法後，取得該筆新增資料的主鍵值
-```
-
----
-## 將使用子查詢得到的資料做更新
-```sql
-update b1
-set b1.defaultguid = XXX
-from cSC_BusinessUnit b1
-where b1.BusinessUnitGUID = 7
 ```
 
 ----

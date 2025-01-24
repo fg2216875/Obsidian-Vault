@@ -55,16 +55,16 @@ const names = data.map(({ name }) => name);
 - 如果不回傳則是 `undefined`
 
 ----
-**扣除數字但結果不小於0**
+### 扣除數字但結果不小於0
 ```javascript
 function deductExamCount(examInfo) {
-let result = Math.max(0, examInfo.examCount - examInfo.validExam); 
-return result;
+	let result = Math.max(0, examInfo.examCount -examInfo.validExam); 
+	return result;
 }
 ```
 
 -----
-**監聽瀏覽器離開畫面的事件**
+### 監聽瀏覽器離開畫面的事件
 ```javascript
 //上一頁、重新整理、關閉皆會觸發beforeunload事件(也可使用pagehide)
 window.addEventListener('beforeunload', function (event) { 
@@ -76,3 +76,12 @@ window.addEventListener('beforeunload', function (event) {
 });
 ```
 註: 瀏覽器對顯示 `beforeunload` 對話框的行為有限制，可能不支援自訂訊息。
+
+---
+### 避免使用上一頁回到剛才瀏覽的畫面
+```javaScript
+<script> 
+	// 跳轉到 Index 頁面，避免瀏覽器記錄剛才頁面的歷史紀錄 
+	window.location.replace('/Home/Index'); 
+</script>
+```
