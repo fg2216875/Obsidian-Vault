@@ -246,6 +246,14 @@ JOIN (
 	WHERE Active = 1 ) A ON W.EmployeeID = A.EmployeeID
 ```
 
+---
+## 替換資料中指定的文字
+```sql
+UPDATE [資料表名稱]
+SET Content = REPLACE(Content, 'ABC', '')
+WHERE Content LIKE '%ABC%';
+```
+
 ----
 ## 顯示查詢執行的時間
 
@@ -266,3 +274,27 @@ CPU 時間（CPU Time）: 指 SQL Server 使用 CPU 的總時間
     - 查詢受到 I/O 操作或資源鎖定的瓶頸影響，需要優化磁碟讀取或避免死鎖。
 - **`CPU time` 與 `Elapsed time` 接近**
     - 查詢大多數時間都花在計算上，受限於 CPU 性能。
+
+---
+## `WHERE NOT` 是什麼？
+```sql
+SELECT * FROM your_table WHERE NOT (id = 2 AND num = 2);
+```
+- `NOT` 表示 **反向判斷**，取出與條件相反的結果。
+- 原本 `(id = 2 AND num = 2)` 是篩選出符合 `id = 2 且 num = 2` 的資料。
+- `NOT (id = 2 AND num = 2)` 則是排除掉這些資料，留下其他的。
+
+**排除多組資料的寫法**
+```sql
+SELECT *
+FROM your_table
+WHERE NOT ( (id = 2 AND num = 2) OR (id = 1 AND num = 1) );
+```
+
+### 什麼情況下 `NOT` 效能會差？
+
+| 使用情境                | 問題                                      |
+| ------------------- | --------------------------------------- |
+| `NOT LIKE`          | 因為 `LIKE` 本來就慢，加上 `NOT` 會讓 SQL 引擎沒辦法用索引 |
+| `NOT IN` 大量子查詢      | 如果子查詢結果集很大，會拖慢效能                        |
+| `NOT EXISTS` 加上複雜邏輯 | 需要遍歷很多資料才知道有沒有符合條件                      |

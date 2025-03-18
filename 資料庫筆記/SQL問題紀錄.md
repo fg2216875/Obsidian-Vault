@@ -127,3 +127,5 @@ ALTER AUTHORIZATION ON DATABASE::[YourDatabase] TO [sa];
 
 參考:
 [MSSQLSERVER_15517](https://learn.microsoft.com/zh-tw/sql/relational-databases/errors-events/mssqlserver-15517-database-engine-error?view=sql-server-ver16)
+
+

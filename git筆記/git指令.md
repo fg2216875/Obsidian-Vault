@@ -11,7 +11,7 @@
 git archive --format=zip --output=files.zip HEAD $(git diff-tree -r --no-commit-id --name-only --diff-filter=ACMRT <指定起始commit-id> <指定最後commit-id>)
 ```
 註:
-如果方案底下有多個專案，執行指令會出現錯誤，故路徑要設定在"方案路徑底下"
+如果方案底下有多個專案，並且在某一個專案底下執行指令，就會出現錯誤，故路徑要設定在"方案路徑底下"
 
 ------------------
 ## 查看現有分支
@@ -36,9 +36,16 @@ git branch -m <Old Name> <New Name>
 git branch --unset-upstream <本機分支名稱>
 ```
 
-移除當前分支的追蹤綁定
+移除目前分支的上游
 ```
 git branch --unset-upstream
+```
+
+---
+## 設定本機分支的上游
+
+```
+git branch -u origin/遠端分支名稱
 ```
 
 --------------------

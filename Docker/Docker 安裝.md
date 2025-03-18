@@ -4,7 +4,7 @@
 (win 10企業版、專業版則要勾選"Hyper-V")
 ![[Pasted image 20240223172848.png]]
 
-============================================
+---
 2.到官網下載docker desktop(https://www.docker.com/products/docker-desktop/)
 執行安裝，並於安裝好後重新開機
 
@@ -16,7 +16,7 @@
 wsl --install
 ```
 
-=================================================
+---
 3.執行docker desktop，初始化設定選擇recommend項目，等處理好後若沒問題便安裝完成
 
 

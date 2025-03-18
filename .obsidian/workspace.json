@@ -13,20 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "資料庫筆記/MSSQL/分析索引、執行計畫.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "分析索引、執行計畫"
-            }
-          },
-          {
-            "id": "69abd5c2415e1daf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "git筆記/git指令.md",
                 "mode": "source",
                 "source": false
@@ -34,8 +20,23 @@
               "icon": "lucide-file",
               "title": "git指令"
             }
+          },
+          {
+            "id": "6f0144a4b43a9540",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git筆記/git操作方式記錄.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "git操作方式記錄"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -54,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "檔案瀏覽器"
@@ -175,35 +177,36 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "a17492122cfdc4c4",
+  "active": "6f0144a4b43a9540",
   "lastOpenFiles": [
-    "前端相關/Vue.js/Vue功能紀錄.md",
-    "前端相關/Vue.js/Component使用.md",
-    "前端相關/Javascript筆記.md",
-    "前端相關/Jquery筆記.md",
-    "資料庫筆記/Connection Pool 與連線相關問題.md",
-    "資料庫筆記/MSSQL/SQL功能操作.md",
-    "資料庫筆記/MSSQL/SQL語法.md",
-    "資料庫筆記/MSSQL/SQL指令(管理層級).md",
-    "資料庫筆記/MSSQL/效能比較.md",
-    "資料庫筆記/MSSQL/比對sql修改前後的查詢結果是否一致.md",
-    "資料庫筆記/MSSQL/分析索引、執行計畫.md",
-    "C charp筆記/名詞解釋.md",
-    "面試問題/專業技術問題.md",
-    "資料庫筆記/圖片/Pasted image 20250116170949.png",
-    "Python/使用pip安裝套件.md",
     "git筆記/git指令.md",
-    "Python/問題紀錄.md",
-    "資安筆記/程式白箱風險.md",
-    "資安筆記/主機白箱風險.md",
-    "C charp筆記/類別屬性寫法.md",
-    "C charp筆記/上傳Excel並匯入到SQL.md",
-    "C charp筆記/資料匯出到Excel.md",
-    "程式bug紀錄/sql相關.md",
     "使用套件相關/安裝套件後，更新到另一台主機上.md",
-    "資料庫筆記/SQL問題紀錄.md",
+    "Flutter/安裝Flutter，並使用在VS Code中.md",
+    "C charp筆記/Net Core筆記/架設到IIS步驟.md",
+    "C charp筆記/Net Core筆記/執行API相關功能.md",
+    "資料庫筆記/MSSQL/SQL指令(管理層級).md",
+    "資料庫筆記/MSSQL/分析索引、執行計畫.md",
+    "資料庫筆記/MSSQL/比對sql修改前後的查詢結果是否一致.md",
     "資料庫筆記/建立主索引鍵(PK).md",
+    "資料庫筆記/SQL & NoSQL.md",
+    "資料庫筆記/Mongo/設定Log自動分隔檔案(4.4版).md",
+    "資料庫筆記/Mongo/Mongo問題紀錄.md",
+    "資料庫筆記/MSSQL/SQL指令.md",
+    "資料庫筆記/Mongo",
+    "資料庫筆記/MSSQL/效能比較.md",
+    "Postman/撰寫迴圈呼叫API.md",
+    "C charp筆記/常用程式碼工具/交換集合內部的元素.md",
+    "C charp筆記/常用程式碼工具/時間字串轉換成數字.md",
+    "C charp筆記/常用程式碼工具/檢查檔案真實類型.md",
+    "C charp筆記/常用程式碼工具/數字轉換字串補位.md",
+    "C charp筆記/`IEnumerable` 和 `List` 的區別.md",
+    "C charp筆記/上傳Excel並匯入到SQL.md",
+    "C charp筆記/非同步筆記.md",
+    "C charp筆記/名詞解釋.md",
+    "C charp筆記/資料匯出到Excel.md",
+    "C charp筆記/資料儲存位置比較.md",
     "資料庫筆記/建立外部索引鍵(FK).md",
+    "資料庫筆記/圖片/Pasted image 20250116170949.png",
     "C charp筆記/套件",
     "HTTP 傳輸協定/圖片/Pasted image 20250106171620.png",
     "HTTP 傳輸協定/圖片",
@@ -221,7 +224,6 @@
     "Linux",
     "資料庫筆記/Oracle",
     "資料庫筆記/MSSQL",
-    "C charp筆記/常用程式碼工具",
-    "前端相關/Vue.js/未命名"
+    "C charp筆記/常用程式碼工具"
   ]
 }

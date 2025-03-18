@@ -15,7 +15,7 @@
 4.輸入`docker push ayaowu/coretest`，將指定的image上傳至docker hub
 ![[Pasted image 20240301170134.png]]
 
-======================================================
+===================================================
 5.到docker hub查看Repositories中是否有剛剛上傳的image，如果有就是有成功上傳
 ![[Pasted image 20240301170431.png]]
 

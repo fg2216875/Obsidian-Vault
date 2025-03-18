@@ -49,7 +49,7 @@ git push origin main
 ```
 
 ---
-## 使用指令將遠端分支
+## 使用指令將專案版本推送至遠端分支
 
 **1.確認當前分支**
 如果需要切換分支可使用這個指令
@@ -67,4 +67,40 @@ git fetch <遠端儲存庫名> <遠端分支名>
 將遠端分支的內容合併到本機分支
 ```
 git merge <遠端儲存庫名>/<遠端分支名>
+```
+
+---
+### 刪除git紀錄並重新推送
+
+1.刪除 `.git` 目錄，這會完全移除 Git 版本控制資訊
+```
+rm -rf .git
+```
+
+2.重新初始化 Git
+```
+git init
+```
+
+3.設定正確的 `name` 和 `email`
+```
+git config --local user.name "你的名稱" 
+git config --local user.email "你的email"
+```
+
+4.重新加入所有檔案
+```
+git add . 
+git commit -m "Initial commit"
+```
+
+5.重新連接遠端儲存庫
+```
+git remote add origin <你的遠端倉庫網址>
+```
+例如:git remote add origin https://github.com/yourusername/yourrepo.git
+
+6.強制推送分支(假設目前使用的分支是 `master`)
+```
+git push -f origin master
 ```
