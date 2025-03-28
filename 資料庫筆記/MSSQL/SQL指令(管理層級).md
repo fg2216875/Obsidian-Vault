@@ -106,3 +106,5 @@ ORDER BY
 | `status`             | 連線狀態。                                                   |
 | `start_time`         | 該指令開始執行的時間。                                             |
 | `total_elapsed_time` | 執行了多久（毫秒）。                                              |
+
+-----

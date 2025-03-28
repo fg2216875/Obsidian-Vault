@@ -66,3 +66,24 @@ hint: (e.g., 'git pull ...') before pushing again.
 2. 確保提交歷史保持乾淨。
 
 ### 2.強制覆蓋遠端變更
+
+----
+## 拉取遠端分支時出現"git did not exit cleanly (exit code 128)"錯誤
+
+狀況:
+由於在gitea修改完密碼後，用tortoisegit去拉取分支，因為tortoisegit並沒有更新帳號狀態，所以登入者的名稱和密碼皆為舊版。
+
+解決方式:
+可以先用git bash查看當前git使用者名稱和Email是否正確，若與gitea的帳號不同時可以先修改
+```
+git config --global user.email
+git config --global user.name
+```
+
+1.先在windows搜尋"認證管理員"，然後選擇"windows認證"
+2.下方一般認證中，找到該git的url，然後按下"編輯"，修改使用者名稱和密碼
+
+註:剛剛有更新過，但依舊會出現錯誤訊息，但不知何故，該認證突然消失。
+然後再去git時，就會出現要求輸入使用者名稱和密碼，接著就成功拉取專案了
+
+參考:https://stackoverflow.com/questions/20195304/how-do-i-update-the-password-for-git

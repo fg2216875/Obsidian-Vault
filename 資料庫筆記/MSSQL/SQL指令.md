@@ -173,6 +173,23 @@ select * into T_NewTable from T_OldTable
 ```
 
 ---
+## 讓查詢區分大小寫
+因為 SQL Server 預設的排序規則（Collation）通常是 **不區分大小寫** 的，例如 `SQL_Latin1_General_CP1_CI_AS`，其中 `CI` 代表 **Case Insensitive（大小寫不敏感）**。
+
+使用 **區分大小寫的 Collation**，例如 `Latin1_General_CS_AS`
+```sql
+SELECT * FROM TableName WHERE name COLLATE Latin1_General_CS_AS = 'LUNA';
+```
+
+## 修改欄位的 Collation
+若希望特定欄位永遠區分大小寫，可以修改欄位的 Collation
+```sql
+ALTER TABLE TableName 
+ALTER COLUMN name NVARCHAR(50) COLLATE Latin1_General_CS_AS;
+```
+**註**：這個方法會影響整個資料表，可能會影響現有的索引和查詢效能。
+
+---
 ## 將資料分組後再做distinct，去除指定欄位中的重複資料:
 
 題目:

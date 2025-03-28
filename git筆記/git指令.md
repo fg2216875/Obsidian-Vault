@@ -11,7 +11,7 @@
 git archive --format=zip --output=files.zip HEAD $(git diff-tree -r --no-commit-id --name-only --diff-filter=ACMRT <指定起始commit-id> <指定最後commit-id>)
 ```
 註:
-如果方案底下有多個專案，並且在某一個專案底下執行指令，就會出現錯誤，故路徑要設定在"方案路徑底下"
+若方案底下有多個專案，而路徑設在某一個專案下執行指令，就會出現` fatal:pathspec XXXX did not match any files `訊息，故路徑要設定在"方案路徑那層中"
 
 ------------------
 ## 查看現有分支
@@ -93,7 +93,7 @@ git config user.name <user>
 git clone <url>
 ```
 
---------------------
+-----------------
 ## 修改最後一次commit的訊息
 
 使用--amend
@@ -105,10 +105,10 @@ git commit --amend -m "Change Message"
 ## 產生指定版本區間差異清單
 
 ```
-git diff-tree -r --no-commit-id --name-status --text --diff-filter=ACDMRT <上次的目的commit-id> <目的commit-id> > changes.txt
+git diff-tree -r --no-commit-id --name-status --text --diff-filter=ACDMRT <指定起始commit-id> <指定最後commit-id> > changes.txt
 ```
  註:
- 路徑要設定在"方案路徑底下"，以避免方案下有多個專案，導致指令出現錯誤
+若方案底下有多個專案，而路徑設在某一個專案下執行指令，就會出現` fatal:pathspec XXXX did not match any files `訊息，故路徑要設定在"方案路徑那層中"
 
 --------------
 ## 查詢遠端儲存庫
@@ -124,14 +124,14 @@ git remote -v
 git remote add <name> <url>
 ```
 
-----------------------------
+------------------
 ## 修改遠端儲存庫位置
 
 ```
 git remote set-url origin XXXXXXX
 ```
 
--------------------------------
+------------------
 ## Git初始化
 
 讓 git 開始追蹤資料夾內所有檔案變化的一舉一動(會出現.git隱藏資料夾)
@@ -139,13 +139,13 @@ git remote set-url origin XXXXXXX
 git init
 ```
 
-------------------------------
+-----------------
 ## 在Git Bash中切換路徑
 
 cd <指定路徑>
 例: cd /D/HZN/Test
 
---------------------------
+------------------
 ## 修改已註冊的遠端儲存庫名稱
 
 ```
@@ -226,7 +226,22 @@ git push -f
 git reset HEAD^
 ```
 
----------------------------
+---------------
+## 取消已追蹤的檔案
+
+1.針對單獨檔案取消追蹤
+```
+git rm --cached filename    
+```
+
+2.針對資料夾取消追蹤
+```
+git rm -r --cached foldername   
+```
+
+參考:https://cynthiachuang.github.io/Ignore-Tracked-Files-in-Git/
+
+----
 ## Git合併指定commit到另一個分支
 
 比如feature 分支上的commit 82ecb31 非常重要，它含有一個bug的修改，或其他人想訪問的內容。無論什麼原因，
